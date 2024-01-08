@@ -1,0 +1,29 @@
+.button {
+	background-color: #fff0 !important;
+	position: relative;
+	::after {
+		content: "";
+		position: absolute;
+		background-color: #fff;
+		height: 2px;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		transform-origin: center;
+		transform: scaleX(0);
+		transition: all 0.3s ease-in-out;
+	}
+	:hover::after {
+		color: var(--accent2) !important;
+		transform: scaleX(1);
+	}
+}
+
+@font-face {
+	font-family: "Brownhill Script";
+	src: url("../../assets/Brownhill-Script/Brownhill\ Script\ swash.ttf") format("truetype");
+}
+
+.ti {
+	font-family: "Brownhill Script";
+}

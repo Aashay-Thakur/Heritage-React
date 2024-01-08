@@ -10,7 +10,7 @@ var slideDurationSetting = 400; //Amount of time for which slide is "locked". Ho
 var currentSlideNumber = 0;
 // var totalSlideNumber = $(".background").length;
 //! Please change this to the number of slides you have.
-var totalSlideNumber = 5;
+var totalSlideNumber = 4;
 
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function parallaxScroll(evt) {

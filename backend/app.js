@@ -24,8 +24,22 @@ app.use(
 app.get("/api/all", async (req, res) => {
 	try {
 		const snapshot = await ref.orderBy("name").get();
-		const data = snapshot.docs.map((doc) => doc.data());
+		const data = snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
 		res.json(data);
+	} catch (error) {
+		console.log(error);
+		res.status(500).json({ message: "Server Error" }).send();
+	}
+});
+
+app.get("/api/:id", async (req, res) => {
+	try {
+		const data = await ref.doc(req.params.id).get();
+		if (!data.exists) {
+			res.status(404).json({ message: "Not Found" }).send();
+			return;
+		}
+		res.json(data.data());
 	} catch (error) {
 		console.log(error);
 		res.status(500).json({ message: "Server Error" }).send();

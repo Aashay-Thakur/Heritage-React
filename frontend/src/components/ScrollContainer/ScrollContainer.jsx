@@ -1,9 +1,10 @@
 import { PropTypes } from "prop-types";
 
+import "./ScrollContainer.scss";
+
 function ScrollContainer({ children }) {
 	return (
 		<div>
-			{" "}
 			<div className="parallax-container">
 				{/* First Welcome */}
 				<section className="background" id="anim">
@@ -12,14 +13,11 @@ function ScrollContainer({ children }) {
 							<section className="cd-intro">
 								<div className="cd-intro-content mask">
 									<h1 data-content="Incredible भारत">
-										<span>Incredible भारत</span>
+										<span className="ti">Incredible भारत</span>
 									</h1>
 									<div className="action-wrapper">
-										<div className="cd-btn main-action left">
-											<a href="/explore">Get started</a>
-										</div>
-										<div className="cd-btn">
-											<a>Learn More</a>
+										<div className="cd-btn main-action left button">
+											<a href="/explore">Explore Our Heritage</a>
 										</div>
 									</div>
 								</div>
@@ -32,19 +30,14 @@ function ScrollContainer({ children }) {
 				<section className="background">
 					<div className="content-wrapper">
 						<p className="content-title">
-							Welcome <span className="level">in Magical</span> India
+							Welcome <span className="level">to Magical</span> India
 						</p>
-						<p className="content-subtitle">Scroll down and up to see the effect!</p>
+						<p className="content-subtitle">Heritage | Our Pride</p>
 					</div>
 				</section>
 
 				{/* Child Sections */}
 				{children}
-
-				{/* Carousel Section  */}
-				<section className="background">
-					<div className="content-wrapper"></div>
-				</section>
 			</div>
 		</div>
 	);

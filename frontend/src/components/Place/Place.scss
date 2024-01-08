@@ -1,0 +1,30 @@
+@use "../../global/Mask.css";
+main {
+	z-index: 99999;
+}
+
+.parallax-container {
+	height: max-content;
+}
+
+#map,
+#pano {
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+
+.map-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p1 {
+	position: relative;
+	.background-image {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+}

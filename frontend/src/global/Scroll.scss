@@ -9,13 +9,16 @@
 $parallax-offset: 30vh;
 $content-offset: 40vh;
 $transition-speed: 1.2s;
-$slide-number: 4;
+$slide-number: 5;
 
 html,
 body {
-	overflow: hidden;
 	margin: 0;
 	padding: 0;
+}
+
+.main-container {
+	overflow: hidden;
 }
 
 .background {
@@ -120,3 +123,4 @@ body {
 		}
 	}
 }
+

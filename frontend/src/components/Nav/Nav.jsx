@@ -7,11 +7,16 @@ function Nav() {
 			<nav>
 				<div className="nav-wrapper">
 					<Link to="/welcome" className="brand-logo center">
-						Logo
+						Heritage
 					</Link>
 					<ul id="nav-mobile" className="left hide-on-med-and-down">
 						<li>
 							<Link to="explore">Explore</Link>
+						</li>
+					</ul>
+					<ul id="nav-mobile" className="right hide-on-med-and-down">
+						<li>
+							<a href="https://spectacular-palmier-3d090e.netlify.app/list">Add a Place</a>
 						</li>
 					</ul>
 				</div>

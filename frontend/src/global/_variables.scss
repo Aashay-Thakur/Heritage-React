@@ -1,0 +1,14 @@
+$bg1: #31708e;
+$bg2: #5085a5;
+$accent2: #687864;
+$accent1: #8fc1e3;
+$text-color: #f7f9fb;
+
+:root {
+	--bg1: #{$bg1};
+	--bg2: #{$bg2};
+	// --border: #{$border};
+	--accent1: #{$accent1};
+	--accent2: #{$accent2};
+	--text-color: #{$text-color};
+}
